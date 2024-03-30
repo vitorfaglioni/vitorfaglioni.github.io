@@ -3,7 +3,7 @@ const { playerName, id, twitter, instagram, description } = Astro.props;
 ---
 <div class="player"><h4>{playerName}</h4>
     <div class="image">
-        <img class="photo" src={'/players/' + id + '.png'} />
+        <img class="photo" src={'./players/' + id + '.png'} />
     </div>
     <div class="icons">
         <a href={'https://twitter.com/' + twitter} target="_blank">
