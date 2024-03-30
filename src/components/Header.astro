@@ -16,7 +16,7 @@ import HeaderLink from './HeaderLink.astro';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: var(--amarelo);
+		background: var(--vermelho);
 		box-shadow: 0 2px 8px rgba(var(--preto), 5%);
 	}
 	h2 {
@@ -35,9 +35,12 @@ import HeaderLink from './HeaderLink.astro';
 	}
 	nav a {
 		padding: 1em 0.5em;
-		color: var(--azul-claro);
+		color: var(--amarelo);
 		border-bottom: 4px solid transparent;
 		font-weight: bold;
+	}
+	nav a:hover {
+		color: var(--creme);
 	}
 	.social-links,
 	.social-links a {
