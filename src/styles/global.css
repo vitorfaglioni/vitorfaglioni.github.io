@@ -7,13 +7,14 @@
 :root {
 	--preto: 15, 18, 25;
 	/* cores base do Dentro da minha Cabeça*/
-	--ciano: #2cb9bb;
-	--creme: #f0e8c6;
-	--amarelo: #e6ae33;
-	--azul-claro: #2b71c4;
-	--azul-medio: #2c3e8c;
-	--azul-escuro: #1c2a67;
-	--vermelho: #e72e28;
+	--branco-azulado: #d4eefb;
+	--azul-claro: #00549e;
+	--azul-medio: #004385;
+	--azul-escuro: #003070;
+	--amarelo: #f7ae00;
+	--laranja-claro: #f08400;
+	--laranja-medio: #f08400;
+	--laranja-escuro: #e83400;
 }
 
 body {
@@ -21,11 +22,11 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: var(--vermelho);
+	background: var(--azul-medio);
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--amarelo));
+	color: rgb(var(--branco-azulado));
 	font-size: 20px;
 	line-height: 1.7;
 }
@@ -34,11 +35,11 @@ main {
 	width: 720px;
 	max-width: calc(100% - 2em);
 	margin: auto;
-	padding: 3em 1em;
+	padding: 1em 1em;
 }
 
 p {
-	color: var(--creme);
+	color: var(--branco-azulado);
 	text-align: center;
 }
 
@@ -49,7 +50,6 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: var(--creme);
 	line-height: 1.2;
 	text-align: center;
 }
@@ -130,8 +130,8 @@ pre > code {
 }
 
 blockquote {
-	color: var(--creme);
-	border-left: 4px solid var(--amarelo);
+	color: var(--azul-claro);
+	border-left: 4px solid var(--laranja-claro);
 	padding: 0 0 0 20px;
 	margin: 0px;
 	font-size: 1.333em;
@@ -139,7 +139,7 @@ blockquote {
 
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--creme));
+	border-top: 1px solid rgb(var(--laranja-escuro));
 }
 
 @media (max-width: 720px) {

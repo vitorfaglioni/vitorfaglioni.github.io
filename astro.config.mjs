@@ -5,6 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://dentrodaminhacabeca.com.br',
+	site: 'https://peladananet.com.br',
 	integrations: [mdx(), sitemap()]
 });

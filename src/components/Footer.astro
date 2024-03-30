@@ -1,15 +1,16 @@
 ---
 const today = new Date();
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <footer>
-	&copy; {today.getFullYear()} <strong>Dentro da minha cabeça</strong>. <strong>Um podcast de Príncipe Vidane</strong>.
+	&copy; {today.getFullYear()} <strong>{SITE_TITLE}</strong>. <strong>{SITE_DESCRIPTION}</strong>.
 </footer>
 <style>
 	footer {
 		padding: 2em 1em 2em 1em;
-		background-color: var(--amarelo);
-		color: var(--azul-claro);
+		background-color: var(--azul-escuro);
+		color: var(--amarelo);
 		text-align: center;
 	}
 </style>
