@@ -5,7 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://vitorfaglioni.github.io',
-	base: '/pelada-na-net',
+	site: 'https://peladananet.com.br',
 	integrations: [mdx(), sitemap()]
 });
