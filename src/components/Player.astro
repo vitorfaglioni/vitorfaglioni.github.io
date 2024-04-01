@@ -1,7 +1,10 @@
 ---
 const { playerName, id, twitter, instagram, description } = Astro.props;
 ---
-<div class="player"><h4>{playerName}</h4>
+<div class="player">
+    <div class="playerName">
+        <h4 >{playerName}</h4>
+    </div>
     <div class="image">
         <img class="photo" src={'./players/' + id + '.png'} />
     </div>
@@ -19,57 +22,72 @@ const { playerName, id, twitter, instagram, description } = Astro.props;
             </svg>
         </a>
     </div>
-    
-    <p>{description}</p>
-    
-    <p><br/></p>
+    <div class="description"><p>{description}</p></div>
 </div>
 
 
 <style>
-	.image {
-		text-align: center;
-        margin: 1em auto;
-	}
+    .playerName {
+        min-height: 4.2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5em;
+        margin: 0 auto 0.2em;
+    }
 
-    .photo {
-        height: 70%;
-        width: 70%;
+    h4 {
+        color: var(--branco-azulado);
+        margin: 0;
+        filter: drop-shadow(0px 3px 0px var(--azul-escuro)) drop-shadow(0px -1px 0px var(--azul-escuro));
+    }
+
+    .player .image {
+        text-align: center;
+        margin: auto 1em;
+    }
+
+    .player .image .photo {
         border-radius: 100%;
-        filter: 
-            drop-shadow(3px 0px 0px var(--amarelo))
+        filter: drop-shadow(3px 0px 0px var(--amarelo))
             drop-shadow(-3px 0px 0px var(--amarelo))
             drop-shadow(0px 5px 0px var(--laranja-claro)) 
             drop-shadow(0px -5px 0px var(--laranja-escuro));
     }
-
-	p {
-		text-align: center;
-		margin: 1em auto 0;
-	}
-
-    h4 {
-        color: var(--branco-azulado);
-    }
+    
    
-    .icons {
+    .player .icons {
 		color: var(--amarelo);
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
+        align-items: center;
+        justify-content: center;
 		gap: 1em;
 		margin: 0 auto;
+        border-radius: 0.5em;
+        filter: drop-shadow(0px 4px 0px var(--azul-escuro));
 	}
 
-	.icons a {
+    .player .icons svg {
+		display: flex;
+        margin: 0.4em auto;
+
+    }
+
+	.player .icons a {
 		color: var(--amarelo);
 		text-decoration: none;
 	}
 
-	.icons a:hover {
+	.player .icons a:hover {
 		color: var(--laranja-escuro);
 	}
 
-    .player {
+    .description {
+        display: flex;
+    }
+
+    .description p {        
+        margin: 0.4em 0.4em;
     }
 </style>

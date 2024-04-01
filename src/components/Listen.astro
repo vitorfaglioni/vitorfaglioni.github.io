@@ -6,7 +6,7 @@ const playlistURL = 'https://omny.fm/shows/pelada-na-net/playlists/podcast/embed
 <div id="Listen">
 	<main>
 		<h2>Ouça agora!</h2>
-		<div class="player">
+		<div class="audioPlayer">
 			<iframe class="responsive-iframe" src={playlistURL} allow="autoplay; clipboard-write" title={SITE_TITLE}> </iframe>
 		</div>
 		<h4>Disponível em todas as plataformas digitais</h4>
@@ -92,7 +92,7 @@ const playlistURL = 'https://omny.fm/shows/pelada-na-net/playlists/podcast/embed
 		margin: 1em auto;
 	}
 
-	.player {
+	.audioPlayer {
 		margin: 1em auto;
   		position: relative;
 		overflow: hidden;

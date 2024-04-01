@@ -41,8 +41,6 @@ import Player from './Player.astro';
 
 		<h2>Titulares</h2>
 
-		<p><br/></p>
-
 		<div class="players">
 			<Player playerName="Príncipe Vidane" id="vidane" twitter="principevidane" instagram="principevidane" 
 				description="O capitão do time, host e editor do podcast, conduz a bola com qualidade contando com a ajuda de todas as vozes da sua cabeça." 
@@ -57,9 +55,9 @@ import Player from './Player.astro';
 			/>
 		</div>
 
-		<h2>Reservas</h2>
-		
 		<p><br/></p>
+
+		<h2>Reservas</h2>
 
 		<div class="players">
 			<Player playerName="Brulé" id="brule" twitter="brunofaglioni" instagram="brunofaglioni" 
@@ -74,7 +72,7 @@ import Player from './Player.astro';
 				description="Nosso Bebetinho do Rebosteio, craque que segue revoltado com o psicólogo." 
 			/>
 		
-			<Player playerName="Dudu" id="dudu" twitter="edufutirinhas" instagram="edufutirinhas" 
+			<Player playerName="Dudu Futirinhas" id="dudu" twitter="edufutirinhas" instagram="edufutirinhas" 
 				description="Já diria o Cantor Belo: Dãra, Dãra Dãra, Dãrararara..." 
 			/>
 		
@@ -179,5 +177,8 @@ import Player from './Player.astro';
 	}
 
 	.players {
+		display: grid;
+		gap: 8px;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	}
 </style>
