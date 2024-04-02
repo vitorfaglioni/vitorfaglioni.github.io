@@ -1,4 +1,4 @@
-name: Deploy Pelada na Net to Github Pages
+name: Deploy Vidane.com.br to Github Pages
 
 on:
   # Trigger the workflow every time you push to the `main` branch

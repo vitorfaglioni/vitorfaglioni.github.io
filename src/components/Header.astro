@@ -5,28 +5,13 @@ import HeaderLink from './HeaderLink.astro';
 <header>
 	<nav>
 		<div class="internal-links">
-			<HeaderLink href="#Listen">Ouça</HeaderLink>
-			<HeaderLink href="#Comments">Comente</HeaderLink>
-			<HeaderLink href="#About">Sobre</HeaderLink>
-			<HeaderLink href="#Crowdfunding">Apoie</HeaderLink>
+			<HeaderLink href="#SoundBoard">Soundboard</HeaderLink>
 		</div>
 	</nav>
 </header>
 <style>
 	header {
-		margin: 0;
 		padding: 0 1em;
-		background: var(--azul-medio);
-		box-shadow: 0 2px 8px rgba(var(--azul-escuro), 5%);
-	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
-
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
 	}
 	nav {
 		display: flex;
@@ -35,20 +20,7 @@ import HeaderLink from './HeaderLink.astro';
 	}
 	nav a {
 		padding: 1em 0.5em;
-		color: var(--amarelo);
 		border-bottom: 4px solid transparent;
 		font-weight: bold;
-	}
-	nav a:hover {
-		color: var(--laranja-escuro);
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
-	}
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
 	}
 </style>

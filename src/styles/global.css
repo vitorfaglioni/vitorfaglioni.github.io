@@ -5,16 +5,17 @@
  */
 
 :root {
-	--preto: 15, 18, 25;
-	/* cores base do Pelada na Net*/
-	--branco-azulado: #d4eefb;
-	--azul-claro: #00549e;
-	--azul-medio: #004385;
-	--azul-escuro: #003070;
-	--amarelo: #f7ae00;
-	--laranja-claro: #f08400;
-	--laranja-medio: #f08400;
-	--laranja-escuro: #e83400;
+	/* cores base do Vidane.com.br*/
+	--black-raspberry: #310906;
+	--tuscan-red: #633533;
+	--pomegranate-pc: #90605e;
+	--deco-peach: #e9b6b4;
+	--grey-green-light: #f3efe0;
+	--cool-grey-50: #c1d3c8;
+	--sap-green-light: #8fb7b0;
+	--slate-grey: #597380;
+	--cool-grey-90: #3e5168;
+	--indanthrone-blue: #222e50;
 }
 
 body {
@@ -22,11 +23,11 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: var(--azul-medio);
+	background: var(--indanthrone-blue);
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--branco-azulado));
+	color: var(--grey-green-light);
 	font-size: 20px;
 	line-height: 1.7;
 }
@@ -39,7 +40,6 @@ main {
 }
 
 p {
-	color: var(--branco-azulado);
 	text-align: center;
 }
 
@@ -80,11 +80,11 @@ b {
 }
 
 a {
-	color: var(--azul-claro);
+	color: var(--deco-peach);
 }
 
 a:hover {
-	color: var(--azul-escuro);
+	color: var(--tuscan-red);
 }
 
 p {
@@ -111,12 +111,11 @@ table {
 img {
 	max-width: 100%;
 	height: auto;
-	border-radius: 8px;
 }
 
 code {
 	padding: 2px 5px;
-	background-color: var(--ciano);
+	background-color: var(--cool-grey-90);
 	border-radius: 2px;
 }
 
@@ -130,8 +129,8 @@ pre > code {
 }
 
 blockquote {
-	color: var(--azul-claro);
-	border-left: 4px solid var(--laranja-claro);
+	color: var(--cool-grey-50);
+	border-left: 4px solid var(--deco-peach);
 	padding: 0 0 0 20px;
 	margin: 0px;
 	font-size: 1.333em;
@@ -139,7 +138,7 @@ blockquote {
 
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--laranja-escuro));
+	border-top: 1px solid rgb(var(--deco-peach));
 }
 
 @media (max-width: 720px) {
@@ -167,4 +166,23 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+.title {
+	border-radius: 2em;
+	border: 0.3em dotted var(--deco-peach);
+}
+
+.icons {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+	margin: 0 auto;
+}
+
+.icons a {
+	display: flex;
+	text-decoration: none;
 }

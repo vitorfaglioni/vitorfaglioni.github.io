@@ -1,12 +1,13 @@
 ---
 import '@fontsource/atkinson-hyperlegible';
-import Comments from '../components/Comments.astro'
-import About from '../components/About.astro'
 import BaseHead from '../components/BaseHead.astro';
-import Crowdfunding from '../components/Crowdfunding.astro';
 import Header from '../components/Header.astro';
-import Listen from '../components/Listen.astro';
-import Logo from '../components/Logo.astro';
+import Photo from '../components/Photo.astro';
+import About from '../components/About.astro'
+import Contact from '../components/Contact.astro'
+import Podcasts from '../components/Podcasts.astro';
+import Texts from '../components/Texts.astro';
+import Videos from '../components/Videos.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
@@ -18,11 +19,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<Header />
-		<Logo />
-		<Listen />
-		<Comments />
+		<Photo image="./_old-bg.jpg"/>
 		<About />
-		<Crowdfunding />
+		<Photo image="./_pelada-na-net-bg.jpg"/>
+		<Podcasts />
+		<Photo image="./_rebosteio-bg.jpg"/>
+		<Videos />
+		<Photo image="./_gabu-bg.jpg"/>
+		<Texts />
+		<Photo image="./_contato-bg.jpg"/>
+		<Contact />
 		<Footer />
 	</body>
 </html>
