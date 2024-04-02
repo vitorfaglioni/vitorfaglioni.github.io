@@ -6,16 +6,11 @@
 
 :root {
 	/* cores base do Vidane.com.br*/
-	--black-raspberry: #310906;
-	--tuscan-red: #633533;
-	--pomegranate-pc: #90605e;
-	--deco-peach: #e9b6b4;
-	--grey-green-light: #f3efe0;
-	--cool-grey-50: #c1d3c8;
-	--sap-green-light: #8fb7b0;
-	--slate-grey: #597380;
-	--cool-grey-90: #3e5168;
-	--indanthrone-blue: #222e50;
+	--licorice: #1a120b;
+	--bistre: #3c2a21;
+	--dark-vanilla: #d5cea3;
+	--dirty-white: #e5e5cb;
+
 }
 
 body {
@@ -23,11 +18,11 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: var(--indanthrone-blue);
+	background: var(--licorice);
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: var(--grey-green-light);
+	color: var(--dirty-white);
 	font-size: 20px;
 	line-height: 1.7;
 }
@@ -80,11 +75,11 @@ b {
 }
 
 a {
-	color: var(--deco-peach);
+	color: var(--dark-vanilla);
 }
 
 a:hover {
-	color: var(--tuscan-red);
+	color: var(--bistre);
 }
 
 p {
@@ -115,7 +110,7 @@ img {
 
 code {
 	padding: 2px 5px;
-	background-color: var(--cool-grey-90);
+	background-color: var(--bistre);
 	border-radius: 2px;
 }
 
@@ -129,8 +124,7 @@ pre > code {
 }
 
 blockquote {
-	color: var(--cool-grey-50);
-	border-left: 4px solid var(--deco-peach);
+	border-left: 4px solid var(--dark-vanilla);
 	padding: 0 0 0 20px;
 	margin: 0px;
 	font-size: 1.333em;
@@ -138,7 +132,7 @@ blockquote {
 
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--deco-peach));
+	border-top: 1px solid rgb(var(--dark-vanilla));
 }
 
 @media (max-width: 720px) {
@@ -170,7 +164,8 @@ hr {
 
 .title {
 	border-radius: 2em;
-	border: 0.3em dotted var(--deco-peach);
+	border: 0.2em dotted var(--dark-vanilla);
+	padding: 0.6em 1em 0.1em;
 }
 
 .icons {
