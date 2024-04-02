@@ -5,7 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://github.io/vitorfaglioni',
-	/*base: '/vidane-page',*/
+	site: 'https://vitorfaglioni.github.io/',
 	integrations: [mdx(), sitemap()]
 });
