@@ -3,13 +3,12 @@ const today = new Date();
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<footer>
+<footer class="secondary-main">
 	&copy; {today.getFullYear()} <strong>{SITE_TITLE}</strong>. <strong>{SITE_DESCRIPTION}</strong>.
 </footer>
 <style>
 	footer {
 		padding: 2em 1em 2em 1em;
 		text-align: center;
-		background-color: var(--licorice);
 	}
 </style>
